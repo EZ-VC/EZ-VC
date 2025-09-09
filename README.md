@@ -94,7 +94,7 @@ The converted audio will be available at the last cell.
 
 ## Acknowledgements
 
-- [F5-TTS](https://arxiv.org/abs/2406.18009) for opensourcing their code which has made EZ-VC possible.
+- [F5-TTS](https://arxiv.org/abs/2410.06885) for opensourcing their code which has made EZ-VC possible.
 
 ## Citation
 If our work and codebase is useful for you, please cite as:
