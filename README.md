@@ -72,8 +72,8 @@ conda activate ez-vc
 ### Local installation
 
 ```bash
-git clone https://github.com/SWivid/F5-TTS.git
-cd F5-TTS
+git clone https://github.com/EZ-VC/EZ-VC
+cd EZ-VC
 git submodule update --init --recursive
 pip install -e .
 
