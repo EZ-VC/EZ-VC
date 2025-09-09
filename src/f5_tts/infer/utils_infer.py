@@ -49,12 +49,12 @@ tempfile_kwargs = {"delete_on_close": False} if sys.version_info >= (3, 12) else
 
 # -----------------------------------------
 
-target_sample_rate = 24000
-n_mel_channels = 100
-hop_length = 256
-win_length = 1024
+target_sample_rate = 16000
+n_mel_channels = 80
+hop_length = 160
+win_length = 640
 n_fft = 1024
-mel_spec_type = "vocos"
+mel_spec_type = "bigvgan"
 target_rms = 0.1
 cross_fade_duration = 0.15
 ode_method = "euler"
@@ -135,7 +135,7 @@ def load_vocoder(vocoder_name="vocos", is_local=False, local_path="", device=dev
             vocoder = bigvgan.BigVGAN.from_pretrained(local_path, use_cuda_kernel=False)
         else:
             vocoder = bigvgan.BigVGAN.from_pretrained(
-                "nvidia/bigvgan_v2_24khz_100band_256x", use_cuda_kernel=False, cache_dir=hf_cache_dir
+                "SPRINGLab/bigvgan_16khz", use_cuda_kernel=False, cache_dir=hf_cache_dir
             )
 
         vocoder.remove_weight_norm()
@@ -365,11 +365,11 @@ def preprocess_ref_audio_text(ref_audio_orig, ref_text, show_info=print):
         show_info("Using custom reference text...")
 
     # Ensure ref_text ends with a proper sentence-ending punctuation
-    if not ref_text.endswith(". ") and not ref_text.endswith("。"):
-        if ref_text.endswith("."):
-            ref_text += " "
-        else:
-            ref_text += ". "
+    # if not ref_text.endswith(". ") and not ref_text.endswith("。"):
+    #     if ref_text.endswith("."):
+    #         ref_text += " "
+    #     else:
+    #         ref_text += ". "
 
     print("\nref_text  ", ref_text)
 
