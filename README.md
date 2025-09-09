@@ -2,7 +2,8 @@
 
 [![python](https://img.shields.io/badge/Python-3.10-brightgreen)](https://github.com/EZ-VC/EZ-VC)
 [![arXiv](https://img.shields.io/badge/arXiv-2505.16691-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2505.16691)
-[![demo](https://img.shields.io/badge/GitHub-Demo%20page-orange.svg)](https://ez-vc.github.io/)
+[![demo](https://img.shields.io/badge/GitHub-Demo%20page-orange.svg)](https://ez-vc.github.io/EZ-VC-Demo/)
+[![huggingface](https://img.shields.io/badge/🤗-Model-yellow)](https://huggingface.co/SPRINGLab/EZ-VC)
 [![lab](https://img.shields.io/badge/SPRING-Lab-grey?labelColor=lightgrey)](https://asr.iitm.ac.in/)
 <!-- <img src="https://github.com/user-attachments/assets/12d7749c-071a-427c-81bf-b87b91def670" alt="Watermark" style="width: 40px; height: auto"> -->
 
